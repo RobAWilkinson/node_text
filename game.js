@@ -5,3 +5,4 @@ var rl = readline.createInterface({
   output: process.stdout
 });
 var terminal = rl.output;
+terminal.write('hello world');

@@ -19,7 +19,7 @@ describe('asks questions to the user', function() {
       done();
     });
   });
-  it('lets a user cancel a game', function(done) {
+  xit('lets a user cancel a game by typing "no" at prompt', function(done) {
     proc.stdout.once('data', function(dataOutput){
       proc.stdin.write("no\r");
       proc.stdout.on('data', function(output) {
@@ -28,7 +28,7 @@ describe('asks questions to the user', function() {
       });
     });
   });
-  it('lets a user start a game', function(done) {
+  xit('lets a user start a game by typing "yes" at prompt', function(done) {
     proc.stdout.once('data', function(dataOutput){
       proc.stdin.write("yes\r");
       proc.stdout.once('data', function(output) {
@@ -37,7 +37,7 @@ describe('asks questions to the user', function() {
       });
     });
   });
-  it('asks a user to pick a favorite programming language', function(done) {
+  xit('asks a user to pick a favorite programming language by pressing "1" at prompt', function(done) {
     proc.stdout.once('data', function(data){
       proc.stdin.write("yes\r");
       proc.stdout.once("data", function(){
@@ -48,7 +48,7 @@ describe('asks questions to the user', function() {
       });
     });
   });
-  it('the user can pick javascript!', function(done) {
+  xit('the user can pick javascript! by pressing "1" at the prompt', function(done) {
     proc.stdout.once('data', function(){
       proc.stdin.write("yes\r");
       proc.stdout.once("data", function(){
@@ -62,7 +62,7 @@ describe('asks questions to the user', function() {
       });
     });
   });
-  it('the user can enter js that evals to 42 as a sum', function(done) {
+  xit('the user can enter js that evals to 42 as a sum', function(done) {
     proc.stdout.once('data', function(data){
       proc.stdin.write("yes\r");
       proc.stdout.once("data", function(){
@@ -79,7 +79,7 @@ describe('asks questions to the user', function() {
       });
     });
   });
-  it('the user can enter js that evals to 42 as multiply', function(done) {
+  xit('the user can enter js that evals to 42 as multiply', function(done) {
     proc.stdout.once('data', function(data){
       proc.stdin.write("yes\r");
       proc.stdout.once("data", function(){
