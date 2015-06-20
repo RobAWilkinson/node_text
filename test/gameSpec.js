@@ -1,9 +1,6 @@
-var Game = require('../game.js');
 var expect = require('chai').expect;
 var path = require('path');
 var child = require('child_process');
-var stream = require("mock-utf8-stream");
-var concat = require('concat-stream');
 function helperConverter(input) {
   return input.toString('utf-8');
 }
